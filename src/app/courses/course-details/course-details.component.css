@@ -1,0 +1,10 @@
+.category {
+    background: #fbf9ff;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.category h4 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #f0e9ff;
+}

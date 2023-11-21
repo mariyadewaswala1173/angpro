@@ -1,0 +1,49 @@
+<app-spinner></app-spinner>
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+    <a href="" class="navbar-brand">
+        <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Kider</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+            <a routerLink="" routerLinkActive="active"  class="nav-item nav-link active">Home</a>
+            <a routerLink="/about" routerLinkActive="active" class="nav-item nav-link">About Us</a>
+            <div class="nav-item dropdown">
+                <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" routerLink="/courses">Design &raquo; </a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" [routerLink]="['/courses','course_details',1]">Web Design</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" [routerLink]="['/courses','course_details',2]">UI/UX Design</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" routerLink="/courses">Development &raquo;</a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" [routerLink]="['/courses','course_details',3]">Web Development</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" routerLink="/courses">Submenu item 5</a>
+                    </li>
+                  </ul>
+            </div>
+            <a routerLink="/blogs" routerLinkActive="active" class="nav-item nav-link">Blogs</a>
+            <a routerLink="/contact" routerLinkActive="active" class="nav-item nav-link">Contact Us</a>
+        </div>
+        <a routerLink="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i
+                class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>
+<!-- Navbar End -->
