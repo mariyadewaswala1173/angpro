@@ -25,7 +25,7 @@ import { SingleBlogComponent } from './blogs/single-blog/single-blog.component';
 import { Page404Component } from './page404/page404.component';
 import { LoginComponent } from './login/login.component';
 import { CourseService } from './service/courses.service';
-// import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireModule } from '@angular/fire/compat';
 import { firebaseConfig } from './auth/firebaseAuth';
 
 @NgModule({
@@ -56,7 +56,7 @@ import { firebaseConfig } from './auth/firebaseAuth';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(firebaseConfig),
   ],
   providers: [CourseService],
   bootstrap: [AppComponent]
